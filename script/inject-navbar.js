@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => 
 {
-    fetch('/portfolio/components/navbar.html')
+    fetch('/components/navbar.html')
         .then(response => response.text())
         .then(navbarHTML => {
             const navCont = document.createElement('div');
