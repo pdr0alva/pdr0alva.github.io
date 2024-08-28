@@ -6,13 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>P Alvarenga A. - Contato</title>
-
+    <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <script src="/script/navbar.js" defer></script>
+    <script src="/script/contact-copy-email.js" defer></script>
 </head>
 
 <body>
-    <button>QUERO CONTRATAR</button>
+    <div id="Contact">
+        <h2 id="contact__title">Contato</h2>
+
+        <div id="contact__text">
+            <p>Se você já deu uma olhada nos <a href="/projetos/" class="text-link">meus projetos</a>, no que posso <a href="/produtos/" class="text-link">te oferecer</a>, você pode me mandar um email ou então, se preferir, me contatar pelo whatsapp.</p>
+            <p>Sobre orçamentos, não esquenta a cabeça! Estou aberto a negociações e sou flexível para ambos ganharmos.</p>
+        </div>
+
+        <!-- EMAIL COPY ANALYSIS -->
+        <div id="ContactData">
+            <div id="contact__email">
+                <p id="contact__email__text">pedro.alvarenga.afonso<span class="light-grey-text">@gmail.com</span></p>
+                <button id="contact__email__button">Copiar</button>
+            </div>
+
+            <div id="contact__number">
+                <h4>Você pode me mandar uma mensagem também!</h4>
+                <a href="https://wa.me/13997161696" target="_blank">
+                    <img src="/images/whatsapp.svg"/>
+                    <p>13 997161696</p>
+                    <img id="open-link" src="/images/open-link.svg"/>
+                </a>
+            </div>
+            
+        </div>
+
+    </div>  
 </body>
 
 </html>
