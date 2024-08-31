@@ -24,6 +24,7 @@ const navbarManager = () =>
     navmobile_button.addEventListener("click", (ev) => 
     {
         navmobile_content.classList.toggle("active");
+        console.log("Mob Navbar clicked");
         ev.stopPropagation();
     });
             
