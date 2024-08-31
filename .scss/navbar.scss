@@ -27,14 +27,14 @@
         #navbar-desktop {
             gap: 2.5em;
             font-size: 1.25rem;
-            margin: 1.6rem 0 4.5rem 0;
-        
+            margin: 2.2rem 0 4.5rem 0;
+
             & > .navbar__text-links {
                 padding: 0.6rem 2.4rem;    
             }       
         }
     }
-
+                                                   
     @media screen and (min-width: 768px) and (max-width: 1024px) 
     {
         #navbar-desktop {
@@ -54,19 +54,21 @@
     }
 }
 
-@media screen and (max-width: 768px) // Critical Point
+@media screen and (max-width: 769px) // Critical Point
 {
     #navbar-desktop { display: none !important; }
     #navbar-mobile__button { display: flex !important; }
     #navbar-mobile__items.active { display: flex !important; }  
     #spacer { 
-        display: block !important; 
+        display: block; 
         width: 100%;
-        margin-bottom: 2rem;
     }
     
     #navbar-mobile {
+
         & > #navbar-mobile__items {
+            z-index: 1;
+            
             display: none;
             position: fixed;
             flex-direction: column;
@@ -75,6 +77,9 @@
             border: 1px solid var(--color_theme);
             border-radius: 2px;
             
+            justify-content: space-around;
+
+
             & > a {
                 color: var(--color_light);
                 text-decoration: none;
@@ -84,7 +89,6 @@
         }
     
         & > #navbar-mobile__button {
-            display: none;
             width: 50px;
             height: 50px;
             margin: 2rem 0 0 2rem;
@@ -98,9 +102,8 @@
         #navbar-mobile__items {
             width: 15rem;
             height: 25rem;
-            margin: 0rem 0 0 2rem;
-            justify-content: space-around;
-            padding: 0 0 40px 0;
+            margin-left: 2rem;
+            padding-bottom: 40px;
             
             & > a {
                 font-size: 1.4rem;
@@ -119,13 +122,11 @@
         #navbar-mobile__items {
             width: 10rem;
             height: 20rem;
-            margin: 0rem 0 0 2rem;
-            justify-content: space-around;
-            padding: 0 0 40px 0;
-    
+            padding: 0 0 20px 0;
+            margin: 0 0 0 2.5rem;
+
             & > .navbar__text-links {
-                font-size: 1rem;
-                
+                font-size: 1rem;                
                 & > img { width: 50px; height: 50px; }
             }
         }

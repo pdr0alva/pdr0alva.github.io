@@ -1,12 +1,24 @@
 @import "/reset.css";
 @import "/css/root.css";
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
 #HookContent {
     display: flex;
     align-items: center;
-    justify-content: center;
+    
+    justify-content: center; 
     font-family: var(--font_code);
     font-weight: 200;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     & > #hook__image {
         border-radius: 50%;
@@ -44,6 +56,7 @@
 @media screen and (min-width: 1024px) 
 {
     #HookContent {
+        
         gap: 5rem;
 
         & > #Hook__title-button {
@@ -60,7 +73,6 @@
 {
     #HookContent {
         gap: 3.6rem;
-        margin: 0;
 
         & > img { width: 280px; }
         
