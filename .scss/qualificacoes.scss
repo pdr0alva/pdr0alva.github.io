@@ -34,19 +34,12 @@
     color: var(--color_theme);   
 }
 
-#quali-title { font-family: var(--font_code); }
+#quali-title { font-family: var(--font_code); text-align: center; }
 
 
 @media screen and (min-width: 1024px)
 {
-    #quali-title { font-size: 2rem; font-weight: 400;}
-
-    h2
-    {
-        text-align: center;
-        font-size: 1.8rem;
-    }
-
+    #quali-title { font-size: 2.2rem; font-weight: 400;}
     .topic
     {
         width: 20vw;
@@ -56,5 +49,59 @@
         font-size: 1.1rem;
 
         & > .topic-title { font-size: 1.6rem; } 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    #quali-title { font-size: 2rem; font-weight: 400;}
+
+    .topic
+    {
+        min-width: 20vw;
+        max-width: 30vw;
+
+        padding: .5rem 2rem 2.8rem 2rem;
+        margin: 2rem;
+    
+        font-size: 1.1rem;
+
+        & > .topic-title { font-size: 1.6rem; } 
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px)
+{
+    #quali-title { font-size: 1.8rem; font-weight: 400;}
+
+    .topic
+    {
+        min-width: 35vw;
+        max-width: 40vw;
+
+        padding: .5rem 2rem 2.8rem 2rem;
+        margin: 2rem;
+    
+        font-size: 1.1rem;
+
+        & > .topic-title { font-size: 1.4rem; } 
+    }
+}
+
+@media screen and (max-width: 375px)
+{
+    #quali-title { font-size: 1.7rem; font-weight: 400;}
+
+    .topic
+    {
+        min-width: 60vw;
+        max-width: 70vw;
+
+        padding: .5rem 2rem 2.8rem 2rem;
+        margin: 2rem;
+    
+        font-size: 1.1rem;
+
+        & > .topic-title { font-size: 1.4rem; } 
     }
 }
