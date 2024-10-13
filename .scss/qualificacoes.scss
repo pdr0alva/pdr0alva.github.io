@@ -1,0 +1,60 @@
+@import "/reset.min.css";
+@import "/css/root.min.css";
+
+
+#quali-subgroup
+{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    
+    & > .topic
+    {
+        box-shadow: 0px 0px 20px 0px rgba(0, 209, 160, 0.3);    
+        
+        border: 1px solid var(--color_theme);
+        border-radius: 8px 0 0 0;
+        
+        & > .topic-title { font-family: var(--font_code) !important; font-weight: 800; }
+
+        font-family: var(--font_text);
+
+        & > .topic__link-group
+        {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.quali-link 
+{
+    color: var(--color_theme);   
+}
+
+#quali-title { font-family: var(--font_code); }
+
+
+@media screen and (min-width: 1024px)
+{
+    #quali-title { font-size: 2rem; font-weight: 400;}
+
+    h2
+    {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .topic
+    {
+        width: 20vw;
+        padding: .5rem 2rem 2.8rem 2rem;
+        margin: 2rem;
+    
+        font-size: 1.1rem;
+
+        & > .topic-title { font-size: 1.6rem; } 
+    }
+}

@@ -26,8 +26,7 @@ const navbarManager = () =>
         navmobile_content.classList.toggle("active");
         console.log("Mob Navbar clicked");
         ev.stopPropagation();
-    });
-            
+    });    
 
     window.addEventListener("click", (ev) => 
     {
