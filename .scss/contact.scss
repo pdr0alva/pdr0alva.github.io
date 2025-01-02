@@ -8,7 +8,7 @@
 
     & > #contact__title {
         font-family: var(--font_code);
-        font-weight: 200;
+        font-weight: 400;
     }
     
     & > #contact__text {
@@ -30,8 +30,8 @@
     & > #contact__email 
     {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        // justify-content: center;
+        // align-items: center;
 
         & > #contact__email__text 
         {
@@ -57,13 +57,12 @@
             &:hover 
             {
                 cursor: pointer;
-                box-shadow: 0px 0px 40px 1px rgba(0, 209, 160, 0.3);
+                box-shadow: 0px 0px 40px 1px var(--color_theme-boxshadow);
             }
         }
     }
     
-    & > #contact__number 
-    {
+    & > #contact__number {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -71,16 +70,14 @@
         border: 1px solid var(--color_theme);
         border-radius: 5px;
 
-        & > h4 
-        {
+        & > h4 {
             font-family: var(--font_code);
             font-weight: 200;
             text-align: center;
             justify-content: center;
         }
     
-        & > a 
-        {
+        & > a {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -99,20 +96,17 @@
 }
 
 
-@media screen and (min-width: 1024px) 
-{   
-    #contact__title 
-    {
-        font-size: 2.8rem;
-        margin-bottom: 2rem;
+@media screen and (min-width: 1024px) {   
+    #contact__title {
+        font-size: 2.5rem;
+        margin: 3rem 0 5rem 0;
     }
     
-    #contact__text 
-    {
+    #contact__text {
         gap: 3rem;
-        
-        & > p 
-        {
+        margin: 0 0 5rem 0;
+
+        & > p {
             width: 25vw;
             font-size: 1.6rem;
             text-align: justify;
@@ -120,52 +114,40 @@
         }
     }
     
-    #ContactData 
-    {
-        margin-top: 2.5rem;
+    #ContactData {
         gap: 1.5rem;
 
-        & > #contact__email 
-        {
+        & > #contact__email {
             display: flex;
             gap: 1rem;
 
-            & > #contact__email__text 
-            {
-                font-size: 1.5rem;
+            height: 5rem;
 
-                min-height: -moz-max-content;
-                min-height: max-content;
-                min-width: -moz-max-content;
-                min-width: max-content;
-                
-                padding: 1.6rem 1.4rem;
+            & > #contact__email__text {
+                font-size: 1.5rem;
+                padding: 0 1.2rem;
             }
     
-            & > #contact__email__button 
-            {
-                padding: 1.5rem;
+            & > #contact__email__button {
+                padding: 0 2rem;
                 font-size: 1.1rem;
             }
         }
 
-        & > #contact__number 
-        {
+        & > #contact__number {
             width: -moz-min-content;
             width: min-content;
             padding: 1rem 1.8rem;
             gap: 0.8rem;
             margin-top: 1rem;
 
-            & > h4 
-            {
+            & > h4 {
                 font-size: 1.2rem;
                 min-width: -moz-max-content;
                 min-width: max-content;
             }
     
-            & > a 
-            { 
+            & > a { 
                 gap: 0.6rem; 
             
                 & > img { width: 1.5rem; }
@@ -178,16 +160,14 @@
 
 @media screen and (min-width: 768px) and (max-width: 1024px) 
 {
-    #contact__title 
-    {
-        font-size: 2.4rem;
-        margin-bottom: 2.5rem;
+    #contact__title {
+        font-size: 2.2rem;
+        margin: 2rem 0 3rem 0;
     }
 
-    #contact__text 
-    {
+    #contact__text {
         gap: 2.2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         
         & > p {
             width: 35vw;
@@ -204,8 +184,7 @@
             display: flex;
             gap: 1rem;
             
-            & > #contact__email__text 
-            {
+            & > #contact__email__text {
                 font-size: 1.5rem;
                 min-height: -moz-max-content;
                 min-height: max-content;
@@ -214,8 +193,7 @@
                 padding: 1.6rem 1.4rem;
             }
             
-            & > #contact__email__button 
-            {
+            & > #contact__email__button {
                 padding: 1.6rem 1.5rem;
                 font-size: 1.1rem;
             }
@@ -230,15 +208,13 @@
             gap: 0.8rem;
             margin-top: 2rem;
 
-            & > h4 
-            {
+            & > h4 {
                 font-size: 1.5rem;
                 min-width: -moz-max-content;
                 min-width: max-content;
             }
             
-            & > a 
-            { 
+            & > a { 
                 gap: .75rem; 
             
                 & > img { width: 1.8rem; height: auto; }
@@ -255,17 +231,16 @@
 
 @media screen and (min-width: 375px) and (max-width: 768px) 
 {
-    #contact__title 
-    {
-        font-size: 2.4rem;
-        margin-bottom: 2.5rem;
+    #contact__title {
+        font-size: 2rem;
+        margin: 2rem 0 3rem 0;
     }
     
     #contact__text 
     {
         gap: 2rem;
         flex-direction: column;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         
         & > p 
         {
@@ -304,7 +279,7 @@
                 width: -moz-min-content;
                 width: min-content;
                 font-size: 1rem;
-                box-shadow: 0px 0px 40px 1px rgba(0, 209, 160, 0.3);
+                box-shadow: 0px 0px 40px 1px var(--color_theme-boxshadow);
             }
         }
 
@@ -334,7 +309,7 @@
     #contact__title 
     {
         font-size: 2.4rem;
-        margin-bottom: 2.5rem;
+        margin: 2rem 0 3rem 0;
     }
     
     #contact__text 
@@ -395,7 +370,7 @@
                 width: -moz-min-content;
                 width: min-content;
                 font-size: 1rem;
-                box-shadow: 0px 0px 40px 1px rgba(0, 209, 160, 0.3);
+                box-shadow: 0px 0px 40px 1px var(--color_theme-boxshadow);
             }
         }
     }

@@ -1,25 +1,21 @@
 @import "/reset.min.css";
 @import "/css/root.min.css";
 
-#projects-container 
-{
+#projects-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
-    & > #projects-title 
-    {
+    & > #projects-title {
         font-family: var(--font_code);
         font-weight: 400;
         text-align: center;
     }
     
-    & > #cards-container 
-    {
+    & > #cards-container {
         display: flex;
         justify-content: center;
-
         flex-wrap: wrap;
     }
 }
@@ -27,37 +23,34 @@
 .project-card {
     display: flex;
     flex-direction: column;
-    
+
     text-decoration: none;
     color: var(--color_light);
     
     border: 1px solid var(--color_theme);
-    border-radius: 4px;
+    border-radius: .2rem;
+    
     & > p { font-family: var(--font_text); }
     
-    & > h3 
-    {
+    & > h3 {
         font-family: var(--font_text);
         text-align: center;
+        font-weight: 600;
     }
 
     transition: 0.4s;
-    &:hover 
-    { 
-        box-shadow: 0px 0px 59px 0px rgba(0, 209, 160, 0.38); 
-        border-color: rgb(0, 234, 179);
+    &:hover { 
+        box-shadow: 0px 0px 25px 0px var(--color_theme-boxshadow); 
+        border-color: var(--color_theme);
     }
 
 }
 
-
-
 @media screen and (min-width: 1024px) 
 {
     #projects-title {
-        font-size: 1.6rem;
-        margin-bottom: 4.5rem;
-        width: 70vw;
+        font-size: 2.5rem;
+        margin: 3rem 0 5rem 0;
     }
 
     #cards-container {
@@ -68,7 +61,8 @@
         max-width: 12.5rem;
         min-height: 11.5rem;
 
-        padding: 1rem 2rem 1.8rem 2rem;
+        gap: 2rem;
+        padding: 1rem 2rem 2rem 2rem;
 
         & > h3 {
             width: 90%;
@@ -83,20 +77,25 @@
 {
     #projects-title 
     {
-        margin-bottom: 3.5rem;
+        font-size: 2rem;
+        margin: 2rem 0 3rem 0;
         width: 80vw;
     }
     
-    #cards-container { gap: 2rem;  margin: 0 10vw; }
+    #cards-container { gap: 2rem;  margin: 0 12vw; }
 
     .project-card 
     {
         max-width: 13rem;
         min-height: 12rem;
         
-        padding: 1rem 2rem 1.8rem 2rem;
-
-        & > h3 { font-size: 1.25rem; }
+        padding: 2rem 2rem 0rem;
+        gap: 2.2rem;
+        
+        & > h3 { 
+            font-size: 1.35rem; 
+            margin: 0;
+        }
     }
 }
 
@@ -107,7 +106,9 @@
     {
         min-width: 20rem;
         max-width: 22rem;
-        font-size: 1.6rem;
+        
+        font-size: 1.8rem;
+        margin: 2rem 0 3rem;
     }
 
     #cards-container 
@@ -125,8 +126,10 @@
         align-items: center;
         justify-content: space-evenly;
         
-        padding: .8rem 2rem;
-        box-shadow: 0px 0px 30px 0px rgba(0, 209, 160, 0.38);
+        gap: 1.5rem;
+
+        padding: 2.2rem 2rem;
+        box-shadow: 0px 0px 30px 0px var(--color_theme-boxshadow);
 
         & > p { font-size: 1.1rem; }
         
@@ -140,8 +143,8 @@
     #projects-title 
     {
         min-width: 14rem;
-        font-size: 1.6rem;
-        margin-top: 2.5rem;
+        font-size: 1.95rem;
+        margin: 2.2rem 0 1.8rem 0;
     }
     
     #cards-container 
@@ -153,20 +156,19 @@
 
     .project-card 
     {
-        width: 13rem;
-        height: 14rem;
-        
-        box-shadow: 0px 0px 30px 0px rgba(0, 209, 160, 0.38);
-        padding: 1rem 2rem;
+        max-width: 50vw;
+        min-height: 35vw;
 
-        & > p 
-        {
-            font-size: 1.1rem;
-            // text-align: center;
-            // padding: 1rem 0 0 0;
+        box-shadow: 0px 0px 30px 0px var(--color_theme-boxshadow);
+        padding: 2rem;
+
+        gap: 2.5rem;
+
+
+        & > h3 { 
+            text-align: left;
+            font-size: 1.3rem; 
         }
-        
-        & > h3 { font-size: 1.2rem; }
     }
 }
 
@@ -188,15 +190,17 @@
 
     .project-card 
     {
-        max-width: 60vw;
-        min-height: 16rem;       
-        
-        padding: .3rem 1.3rem;
-        
-        border-radius: 6px;
-        box-shadow: 0px 0px 35px 0px rgba(0, 209, 160, 0.4);
+        width: 70vw;
+        min-height: 8rem;
 
-        & > p { font-size: 1.1rem; text-align: center; }
-        & > h3 { font-size: 1.4rem; }
+        padding: 2.2rem 1rem;
+        gap: 2rem;    
+            
+        border-radius: 4px;
+        box-shadow: 0px 0px 35px 0px var(--color_theme-boxshadow);
+
+        & > h3 { 
+            font-size: 1.3rem; 
+        }
     }
 }
