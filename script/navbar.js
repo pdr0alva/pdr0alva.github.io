@@ -19,12 +19,11 @@ const navbarManager = () => {
 
     navmobile_button.addEventListener("click", (ev) => {
         navmobile_content.classList.toggle("active");
-        console.log("Mob Navbar clicked");
         ev.stopPropagation();
     });    
 
     window.addEventListener("click", (ev) => {
-        if (!navmobile_content.contains(ev.target) && !navmobile_button.contains(ev.target))
+        if (!navmobile_content.contains(ev.target))
             navmobile_content.classList.remove("active");
     });
 }
